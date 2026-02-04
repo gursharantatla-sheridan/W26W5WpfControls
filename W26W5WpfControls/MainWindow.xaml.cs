@@ -36,5 +36,11 @@ namespace W26W5WpfControls
 
             MessageBox.Show(hobbies);
         }
+
+        private void btnGetCity_Click(object sender, RoutedEventArgs e)
+        {
+            string city = cmbCities.Text;
+            MessageBox.Show(city);
+        }
     }
 }

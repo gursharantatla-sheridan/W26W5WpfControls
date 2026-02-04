@@ -21,5 +21,14 @@
             </StackPanel>
         </GroupBox>
         <Button x:Name="btnGetHobbies" Content="Get Hobbies" Canvas.Left="201" Canvas.Top="264" HorizontalAlignment="Left" VerticalAlignment="Center" Width="102" Click="btnGetHobbies_Click"/>
+        <ComboBox x:Name="cmbCities" Canvas.Left="252" Canvas.Top="34" Width="120">
+            <ComboBoxItem Content="Toronto"/>
+            <ComboBoxItem Content="Paris"/>
+            <ComboBoxItem Content="London"/>
+            <ComboBoxItem Content="Nairobi"/>
+            <ComboBoxItem Content="Tokyo"/>
+            <ComboBoxItem Content="Sydney"/>
+        </ComboBox>
+        <Button x:Name="btnGetCity" Content="Get City" Canvas.Left="380" Canvas.Top="34" HorizontalAlignment="Left" VerticalAlignment="Center" Width="78" Click="btnGetCity_Click"/>
     </Canvas>
 </Window>
