@@ -20,5 +20,21 @@ namespace W26W5WpfControls
         {
             InitializeComponent();
         }
+
+        private void btnGetHobbies_Click(object sender, RoutedEventArgs e)
+        {
+            string hobbies = "";
+
+            if (chkSinging.IsChecked == true)
+                hobbies += chkSinging.Content + "\n";
+
+            if (chkTravelling.IsChecked == true)
+                hobbies += chkTravelling.Content + "\n";
+
+            if (chkRiding.IsChecked == true)
+                hobbies += chkRiding.Content + "\n";
+
+            MessageBox.Show(hobbies);
+        }
     }
 }

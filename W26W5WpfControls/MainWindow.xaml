@@ -6,7 +6,20 @@
         xmlns:local="clr-namespace:W26W5WpfControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Canvas>
+        <StackPanel Height="91" Width="155" Canvas.Left="30" Canvas.Top="35" Background="#FFC5F1B0">
+            <Button Content="Button 1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button Content="Button 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </StackPanel>
+        <Image Height="91" Canvas.Left="33" Canvas.Top="145" Width="149" Source="/Car.png"/>
 
-    </Grid>
+        <GroupBox Height="115" Header="Hobbies" Width="152" Canvas.Left="33" Canvas.Top="252">
+            <StackPanel>
+                <CheckBox x:Name="chkSinging" Content="Singing" Margin="5"/>
+                <CheckBox x:Name="chkTravelling" Content="Travelling" Margin="5"/>
+                <CheckBox x:Name="chkRiding" Content="Bike Riding" Margin="5"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="btnGetHobbies" Content="Get Hobbies" Canvas.Left="201" Canvas.Top="264" HorizontalAlignment="Left" VerticalAlignment="Center" Width="102" Click="btnGetHobbies_Click"/>
+    </Canvas>
 </Window>
